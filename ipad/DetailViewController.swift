@@ -8,7 +8,8 @@
 
 import UIKit
 
-let images = ["fb_feeditem", "avatar_100", "avatar_65"]
+let signalImages = ["fb_feeditem", "avatar_100", "avatar_65", "fb_feeditem"]
+let birthdayImages = ["fb_feeditem", "avatar_100", "avatar_65"]
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var feedImage: UIImageView!
@@ -20,17 +21,11 @@ class DetailViewController: UIViewController {
     
     func selectSignal(index: Int) {
         println("Selected Signal \(index)")
-        feedImage.image = UIImage(named: images[index])
+        feedImage.image = UIImage(named: signalImages[index])
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func selectBirthday(index: Int) {
+        println("Selected Birthday \(index)")
+        feedImage.image = UIImage(named: birthdayImages[index])
     }
-    */
-
 }

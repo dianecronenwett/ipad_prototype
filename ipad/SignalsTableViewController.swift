@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SignalsTableViewController: UITableViewController {
+class SignalsTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var birthdayCollectionView: UICollectionView!
     
     var detailViewController: DetailViewController?
     
@@ -19,14 +21,20 @@ class SignalsTableViewController: UITableViewController {
         println(viewControllers)
         detailViewController = viewControllers[1] as? DetailViewController
         println(detailViewController)
+        
+        birthdayCollectionView.delegate = self
+        birthdayCollectionView.dataSource = self
     }
-
-   override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
+    
+    
+    // --- Signals Table Code ---
+    override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -38,14 +46,24 @@ class SignalsTableViewController: UITableViewController {
         detailViewController?.selectSignal(indexPath.row)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // --- Birthday Collection Code ---
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
-    */
-
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCellWithReuseIdentifier("Birthdays-\(indexPath.row % 3)", forIndexPath: indexPath) as UICollectionViewCell
+           }
+    
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) { 
+        detailViewController?.selectBirthday(indexPath.row)
+        
+    }
 }

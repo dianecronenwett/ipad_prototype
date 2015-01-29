@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>41B33832-A6B5-420B-A781-296D2BEF5471</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ipad</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AAC99802B156202ADBBACA2C7ECAB520CF67F3EB</key>
+		<string>https://github.com/dianecronenwett/ipad_prototype.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ipad.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AAC99802B156202ADBBACA2C7ECAB520CF67F3EB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dianecronenwett/ipad_prototype.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AAC99802B156202ADBBACA2C7ECAB520CF67F3EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AAC99802B156202ADBBACA2C7ECAB520CF67F3EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ipad</string>
+		</dict>
+	</array>
+</dict>
+</plist>
