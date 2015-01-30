@@ -22,7 +22,7 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Aa9-P0-7pR">
-                                        <rect key="frame" x="-58" y="783" width="331" height="232"/>
+                                        <rect key="frame" x="8" y="783" width="331" height="232"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -128,13 +128,6 @@
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
-                                    <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthdays Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gZQ-ah-vAx">
-                                        <rect key="frame" x="0.0" y="100" width="300" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <cells>
                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Birthdays-0" id="ozc-HJ-LIB">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -369,7 +362,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wqv-DL-B0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301" y="426"/>
+            <point key="canvasLocation" x="1252" y="380"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g7i-EP-xZb">
@@ -385,7 +378,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPM-rr-RQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="426"/>
+            <point key="canvasLocation" x="810" y="380"/>
         </scene>
         <!--Item-->
         <scene sceneID="GEE-1F-qDo">
@@ -401,20 +394,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBJ-J8-jue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="500" y="767"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="eDj-ly-9H2">
-            <objects>
-                <viewController id="qml-yq-qTw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sVe-nw-CQk">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QUg-jA-K24" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-105" y="2981"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="axb-E9-Day">
@@ -441,7 +420,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaQ-dc-5iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341" y="1469"/>
+            <point key="canvasLocation" x="148" y="1769"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2e6-RF-lln">
@@ -457,7 +436,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21n-49-wKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-21" y="1469"/>
+            <point key="canvasLocation" x="-215" y="1776"/>
         </scene>
         <!--Item-->
         <scene sceneID="Yi1-pP-aTg">
@@ -467,18 +446,18 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="Pxg-Ku-FQU" kind="relationship" relationship="masterViewController" id="FrN-nk-Xc4"/>
-                        <segue destination="qml-yq-qTw" kind="relationship" relationship="detailViewController" id="70t-IV-cQw"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLR-RB-RmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-628" y="967"/>
+            <point key="canvasLocation" x="-732" y="743"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="g2y-Cd-jgx">
             <objects>
                 <tabBarController id="zKh-MR-GXy" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="eRq-np-GVf">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
